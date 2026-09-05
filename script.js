@@ -101,6 +101,34 @@ function setCategory(category) {
 // ===============================
 // PRODUCTS
 // ===============================
+function renderBirthdayProducts() {
+  const container = document.getElementById("birthdayProducts");
+
+  if (!container) return;
+
+  const birthdayProducts = products.filter(
+    product => product.category === "Birthday"
+  );
+
+  container.innerHTML = birthdayProducts.map(product => `
+    <div class="birthday-product">
+      <img src="${product.image}" alt="${product.name}">
+
+      <div class="birthday-product-info">
+        <h3>${product.name}</h3>
+
+        <div class="birthday-price">
+          <strong>₹${product.price}</strong>
+          <span>₹${product.oldPrice}</span>
+        </div>
+
+        <button onclick="addToCart(${product.id})">
+          Select
+        </button>
+      </div>
+    </div>
+  `).join("");
+}
 
 function renderProducts() {
   const container = document.getElementById("products");
@@ -413,6 +441,7 @@ function showToast(message) {
 
 document.addEventListener("DOMContentLoaded", () => {
   renderProducts();
+  renderBirthdayProducts();
   updateCartCount();
   renderCart();
 });
