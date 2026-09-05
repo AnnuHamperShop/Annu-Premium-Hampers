@@ -9,7 +9,7 @@ const products = [
     category: "Birthday",
     price: 1299,
     oldPrice: 1599,
-    image: "assets/birthday/4ef75bdd7c968e26e32a11f382969da9.jpg"
+    image: "./assets/birthday/4ef75bdd7c968e26e32a11f382969da9.jpg"
   },
   {
     id: 2,
