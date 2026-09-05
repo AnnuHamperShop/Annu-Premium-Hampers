@@ -45,7 +45,16 @@
     <button class="cat cat4" onclick="setCategory('Premium')"><span>👑</span><strong>Premium</strong><small>Extra special gifting</small></button>
   </div>
 </section>
+<section id="birthdayCollection" class="section birthday-collection">
+  <div class="section-title">
+    <div>
+      <small>BIRTHDAY COLLECTION</small>
+      <h2>Choose Your Birthday Hamper</h2>
+    </div>
+  </div>
 
+  <div id="birthdayProducts" class="birthday-products"></div>
+</section>
 <section id="shop" class="section shop">
   <div class="section-title"><div><small>OUR BESTSELLERS</small><h2>Premium Hampers</h2></div><div class="shop-tools"><input id="search" placeholder="Search hampers..." oninput="renderProducts()"><select id="category" onchange="renderProducts()"><option>All</option><option>Birthday</option><option>Couple</option><option>Anniversary</option><option>Premium</option></select></div></div>
   <div id="products" class="products"></div>
