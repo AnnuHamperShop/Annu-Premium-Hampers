@@ -1,0 +1,1 @@
+Place your real product photos in this folder, then update the img paths in script.js.

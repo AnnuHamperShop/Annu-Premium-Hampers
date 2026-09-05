@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Annu Premium Hampers - curated gift hampers for every occasion.">
+<title>Annu Premium Hampers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar">✨ Premium gifting, beautifully packed • Easy ordering</div>
+<header class="header">
+  <a class="logo" href="#home">ANNU <span>PREMIUM HAMPERS</span></a>
+  <nav id="nav"><a href="#home">Home</a><a href="#shop">Shop</a><a href="#categories">Categories</a><a href="#about">About</a></nav>
+  <div class="head-actions"><button class="icon-btn" aria-label="Search" onclick="focusSearch()">⌕</button><button class="cart" onclick="openCart()">🛒 <span>Cart</span><b id="cartCount">0</b></button><button class="menu" onclick="toggleMenu()">☰</button></div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-copy">
+    <div class="badge">THE ART OF GIFTING</div>
+    <h1>Gifts that make<br><i>moments</i> memorable.</h1>
+    <p>Premium hampers thoughtfully curated for birthdays, anniversaries, celebrations and the people you love.</p>
+    <div class="hero-buttons"><a href="#shop" class="btn primary">Shop Hampers <span>→</span></a><a href="#categories" class="btn secondary">Explore Collection</a></div>
+    <div class="trust"><span>✓ Premium curation</span><span>✓ Beautiful packaging</span><span>✓ Pan-India delivery*</span></div>
+  </div>
+  <div class="hero-art">
+    <div class="gift-card">
+      <div class="ribbon"></div><div class="gift-box"><span>ANNU</span><small>PREMIUM</small></div>
+      <div class="flower f1">✿</div><div class="flower f2">❀</div><div class="flower f3">✦</div>
+    </div>
+    <div class="floating-card">🎁 <strong>Made with love</strong><small>for every occasion</small></div>
+  </div>
+</section>
+
+<section class="features"><div><b>🎀</b><span><strong>Premium Packaging</strong><small>Gift-ready presentation</small></span></div><div><b>💝</b><span><strong>Curated With Care</strong><small>Beautiful combinations</small></span></div><div><b>🚚</b><span><strong>Easy Ordering</strong><small>Simple checkout process</small></span></div><div><b>💬</b><span><strong>Need Help?</strong><small>Contact us anytime</small></span></div></section>
+
+<section id="categories" class="categories section">
+  <div class="section-title"><div><small>SHOP BY OCCASION</small><h2>Find the perfect gift</h2></div><a href="#shop">View all →</a></div>
+  <div class="cat-grid">
+    <button class="cat cat1" onclick="setCategory('Birthday')"><span>🎂</span><strong>Birthday</strong><small>Make their day brighter</small></button>
+    <button class="cat cat2" onclick="setCategory('Couple')"><span>❤️</span><strong>For Couples</strong><small>Celebrate your bond</small></button>
+    <button class="cat cat3" onclick="setCategory('Anniversary')"><span>💍</span><strong>Anniversary</strong><small>Moments worth keeping</small></button>
+    <button class="cat cat4" onclick="setCategory('Premium')"><span>👑</span><strong>Premium</strong><small>Extra special gifting</small></button>
+  </div>
+</section>
+
+<section id="shop" class="section shop">
+  <div class="section-title"><div><small>OUR BESTSELLERS</small><h2>Premium Hampers</h2></div><div class="shop-tools"><input id="search" placeholder="Search hampers..." oninput="renderProducts()"><select id="category" onchange="renderProducts()"><option>All</option><option>Birthday</option><option>Couple</option><option>Anniversary</option><option>Premium</option></select></div></div>
+  <div id="products" class="products"></div>
+</section>
+
+<section class="banner"><div><small>MAKE IT EXTRA SPECIAL</small><h2>Because ordinary gifts<br>are not your style.</h2><a class="btn primary" href="#shop">Explore Hampers →</a></div><div class="banner-icon">🎁</div></section>
+
+<section id="about" class="about section"><div><small>ABOUT ANNU</small><h2>Thoughtful gifts.<br>Beautifully presented.</h2></div><div><p>Annu Premium Hampers brings together elegant gift combinations designed to make gifting simple and memorable. Choose a hamper, add it to your cart and complete the checkout in just a few steps.</p><p class="muted">*Delivery availability, charges and payment options can be configured for your business before launch.</p></div></section>
+</main>
+
+<footer><div><a class="logo" href="#home">ANNU <span>PREMIUM HAMPERS</span></a><p>Premium gifting for beautiful moments.</p></div><div><strong>Quick Links</strong><a href="#shop">Shop Hampers</a><a href="#categories">Categories</a><a href="#about">About Us</a></div><div><strong>Customer Care</strong><a href="mailto:hello@annupremiumhampers.com">Email Us</a><a href="#shop">Order Help</a></div></footer>
+<div class="copyright">© 2026 Annu Premium Hampers. All rights reserved.</div>
+
+<div id="cartModal" class="overlay hidden" onclick="if(event.target===this)closeCart()"><div class="drawer"><button class="close" onclick="closeCart()">×</button><div class="drawer-head"><div><small>YOUR BAG</small><h2>Shopping Cart</h2></div></div><div id="cartItems"></div><div class="cart-bottom"><div class="sum"><span>Subtotal</span><strong id="cartTotal">₹0</strong></div><p>Shipping and taxes calculated at checkout.</p><button class="btn primary full" onclick="openCheckout()">Proceed to Checkout →</button></div></div></div>
+
+<div id="checkoutModal" class="overlay hidden" onclick="if(event.target===this)closeCheckout()"><div class="checkout"><button class="close" onclick="closeCheckout()">×</button><div class="checkout-title"><small>SECURE CHECKOUT</small><h2>Complete your order</h2></div><form onsubmit="placeOrder(event)">
+<div class="form-grid"><label>Full Name<input required name="name" autocomplete="name"></label><label>Mobile Number<input required name="mobile" type="tel" inputmode="tel"></label><label class="wide">Full Address<textarea required name="address" rows="2"></textarea></label><label>District<input required name="district"></label><label>State<input required name="state"></label><label>PIN Code<input required name="pin" inputmode="numeric" pattern="[0-9]{6}"></label><label class="wide">Payment Method<select required name="payment"><option value="">Choose payment</option><option>UPI / Online Payment</option><option>Cash on Delivery</option></select></label></div>
+<button class="btn primary full" type="submit">Place Order</button><p class="safe">🔒 Demo checkout. Connect your payment gateway/backend before accepting real payments.</p></form></div></div>
+<div id="toast" class="toast"></div>
+<script src="script.js"></script>
+</body></html>
