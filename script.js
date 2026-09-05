@@ -93,11 +93,24 @@ function setCategory(category) {
 
   renderProducts();
 
+  if (category === "Birthday") {
+    const birthdaySection =
+      document.getElementById("birthdayCollection");
+
+    if (birthdaySection) {
+      birthdaySection.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+
+    return;
+  }
+
   document.getElementById("shop").scrollIntoView({
     behavior: "smooth"
   });
 }
-
 // ===============================
 // PRODUCTS
 // ===============================
