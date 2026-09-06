@@ -3,77 +3,58 @@
 // Main Website JavaScript
 // ===============================
 const products = [
-  {
-    id: 1,
-    name: "Birthday Premium Hamper",
-    category: "Birthday",
-    price: 1299,
-    oldPrice: 1599,
-    image: "./assets/birthday/4ef75bdd7c968e26e32a11f382969da9.jpg"
-  },
-  {
-    id: 2,
-    name: "Birthday Special Hamper",
-    category: "Birthday",
-    price: 1499,
-    oldPrice: 1799,
-    image: "assets/birthday/8b102ebd5385e75437e0b26022352563.jpg"
-  },
-  {
-    id: 3,
-    name: "Birthday Love Hamper",
-    category: "Birthday",
-    price: 1599,
-    oldPrice: 1899,
-    image: "assets/birthday/bba2a718ced11e4c2f72fc3dc2e2ed36.jpg"
-  },
-  {
-    id: 4,
-    name: "Birthday Luxury Hamper",
-    category: "Birthday",
-    price: 1799,
-    oldPrice: 2199,
-    image: "assets/birthday/c1381ce40bfceb2e8bc977aacb37bdec.jpg"
-  },
-  {
-    id: 5,
-    name: "Birthday Gift Box",
-    category: "Birthday",
-    price: 1199,
-    oldPrice: 1499,
-    image: "assets/birthday/c67be1f35d0b72158c9bac5e83a6e317.jpg"
-  },
-  {
-    id: 6,
-    name: "Birthday Elegant Hamper",
-    category: "Birthday",
-    price: 1399,
-    oldPrice: 1699,
-    image: "assets/birthday/d9ca6f0ae6c18baacdd0764d9c66061b.jpg"
-  },
-  {
-    id: 7,
-    name: "Birthday Royal Hamper",
-    category: "Birthday",
-    price: 1899,
-    oldPrice: 2299,
-    image: "assets/birthday/ed3a6ed66fce50778bbabc331451a168.jpg"
-  },
-  {
-    id: 8,
-    name: "Birthday Premium Gift Box",
-    category: "Birthday",
-    price: 1699,
-    oldPrice: 1999,
-    image: "assets/birthday/f766262c205a38a6acd0f27d26920c7a.jpg"
-  },
-  {
+    {
     id: 9,
     name: "Birthday Celebration Hamper",
     category: "Birthday",
     price: 1299,
     oldPrice: 1599,
     image: "assets/birthday/fccaa679405a4745e3b04063a366ac23.jpg"
+  },
+
+  {
+    id: 10,
+    name: "Couple Love Hamper",
+    category: "Couple",
+    price: 1299,
+    oldPrice: 1599,
+    image: "assets/couple/couple1.jpg"
+  },
+
+  {
+    id: 11,
+    name: "Couple Special Hamper",
+    category: "Couple",
+    price: 1499,
+    oldPrice: 1799,
+    image: "assets/couple/couple2.jpg"
+  },
+
+  {
+    id: 12,
+    name: "Romantic Couple Hamper",
+    category: "Couple",
+    price: 1599,
+    oldPrice: 1899,
+    image: "assets/couple/couple3.jpg"
+  },
+
+  {
+    id: 13,
+    name: "Couple Premium Hamper",
+    category: "Couple",
+    price: 1799,
+    oldPrice: 2199,
+    image: "assets/couple/couple4.jpg"
+  },
+
+  {
+    id: 14,
+    name: "Couple Luxury Hamper",
+    category: "Couple",
+    price: 1899,
+    oldPrice: 2299,
+    image: "assets/couple/couple5.jpg"
   }
 ];
 
