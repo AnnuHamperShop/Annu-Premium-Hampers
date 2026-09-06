@@ -101,7 +101,7 @@ const products = [
   category: "Couple",
   price: 1299,
   oldPrice: 1599,
-  image: "assets/couple/957ea10bd55ecce5f36c9814ad3e5913.jpg"
+  image: "./assets/couple/957ea10bd55ecce5f36c9814ad3e5913.jpg"
 },
 
 {
@@ -110,7 +110,7 @@ const products = [
   category: "Couple",
   price: 1499,
   oldPrice: 1799,
-  image: "assets/couple/file_000000000ab8821183dec52ecdee72aa.png"
+  image: "./assets/couple/file_000000000ab8821183dec52ecdee72aa.png"
 },
 
 {
