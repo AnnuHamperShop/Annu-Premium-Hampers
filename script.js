@@ -91,54 +91,54 @@ const products = [
   },
 
 
-  // ===============================
-  // COUPLE PRODUCTS
-  // ===============================
+// ===============================
+// COUPLE PRODUCTS
+// ===============================
 
-  {
-    id: 10,
-    name: "Couple Love Hamper",
-    category: "Couple",
-    price: 1299,
-    oldPrice: 1599,
-    image: "assets/couple/couple1.jpg"
-  },
+{
+  id: 10,
+  name: "Couple Love Hamper",
+  category: "Couple",
+  price: 1299,
+  oldPrice: 1599,
+  image: "assets/couple/957ea10bd55ecce5f36c9814ad3e5913.jpg"
+},
 
-  {
-    id: 11,
-    name: "Couple Special Hamper",
-    category: "Couple",
-    price: 1499,
-    oldPrice: 1799,
-    image: "assets/couple/couple2.jpg"
-  },
+{
+  id: 11,
+  name: "Couple Special Hamper",
+  category: "Couple",
+  price: 1499,
+  oldPrice: 1799,
+  image: "assets/couple/file_000000000ab8821183dec52ecdee72aa.png"
+},
 
-  {
-    id: 12,
-    name: "Romantic Couple Hamper",
-    category: "Couple",
-    price: 1599,
-    oldPrice: 1899,
-    image: "assets/couple/couple3.jpg"
-  },
+{
+  id: 12,
+  name: "Romantic Couple Hamper",
+  category: "Couple",
+  price: 1599,
+  oldPrice: 1899,
+  image: "assets/couple/couple3.jpg"
+},
 
-  {
-    id: 13,
-    name: "Couple Premium Hamper",
-    category: "Couple",
-    price: 1799,
-    oldPrice: 2199,
-    image: "assets/couple/couple4.jpg"
-  },
+{
+  id: 13,
+  name: "Couple Premium Hamper",
+  category: "Couple",
+  price: 1799,
+  oldPrice: 2199,
+  image: "assets/couple/couple4.jpg"
+},
 
-  {
-    id: 14,
-    name: "Couple Luxury Hamper",
-    category: "Couple",
-    price: 1899,
-    oldPrice: 2299,
-    image: "assets/couple/couple5.jpg"
-  }
+{
+  id: 14,
+  name: "Couple Luxury Hamper",
+  category: "Couple",
+  price: 1899,
+  oldPrice: 2299,
+  image: "assets/couple/couple5.jpg"
+}
 
 ];
 
