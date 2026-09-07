@@ -87,7 +87,7 @@ const products = [
     category: "Birthday",
     price: 1299,
     oldPrice: 1599,
-    image: "assets/birthday/fccaa679405a4745e3b04063a366ac23.jpg"
+    image: "./assets/assets/couple/957ea10bd55ecce5f36c9814ad3e5913.jpg"
   },
 
 
@@ -101,7 +101,7 @@ const products = [
   category: "Couple",
   price: 1299,
   oldPrice: 1599,
-  image: "./assets/couple/957ea10bd55ecce5f36c9814ad3e5913.jpg"
+  image: "./assets/assets/couple/file_000000000ab8821183dec52ecdee72aa.png"
 },
 
 {
