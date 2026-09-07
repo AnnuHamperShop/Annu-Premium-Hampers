@@ -105,14 +105,13 @@ const products = [
   },
 
   {
-    id: 11,
-    name: "Couple Special Hamper",
-    category: "Couple",
-    price: 1499,
-    oldPrice: 1799,
-    image: "assets/assets/couple/file_000000000ab8821183dec52ecdee72aa.png"
-  },
-
+  id: 11,
+  name: "Couple Special Hamper",
+  category: "Couple",
+  price: 1499,
+  oldPrice: 1799,
+  image: "https://raw.githubusercontent.com/AnnuHamperShop/Annu-Premium-Hampers/main/assets/assets/couple/file_000000000ab8821183dec52ecdee72aa.png"
+},
   {
     id: 12,
     name: "Romantic Couple Hamper",
