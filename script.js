@@ -987,7 +987,8 @@ document.addEventListener(
   }
 );
 // ===============================
-// CUSTOM HAMPER
+// ===============================
+// CUSTOM HAMPER → WHATSAPP
 // ===============================
 
 function submitCustomHamper() {
@@ -1005,17 +1006,19 @@ function submitCustomHamper() {
     document.getElementById("customMessage").value.trim();
 
 
+  // ===============================
+  // VALIDATION
+  // ===============================
+
   if (!occasion) {
     showToast("Please choose an occasion");
     return;
   }
 
-
   if (!budget) {
     showToast("Please choose your budget");
     return;
   }
-
 
   if (!type) {
     showToast("Please choose hamper type");
@@ -1023,15 +1026,50 @@ function submitCustomHamper() {
   }
 
 
-  const request =
-    "Custom Hamper Request\n\n" +
-    "Occasion: " + occasion + "\n" +
-    "Budget: " + budget + "\n" +
-    "Hamper Type: " + type + "\n" +
-    "Special Request: " +
-    (message || "None");
+  // ===============================
+  // WHATSAPP NUMBER
+  // ===============================
+
+  const whatsappNumber = "918852957048";
 
 
-  alert(request);
+  // ===============================
+  // WHATSAPP MESSAGE
+  // ===============================
 
-    }
+  const whatsappMessage =
+    "🎁 *CUSTOM HAMPER REQUEST*" +
+    "\n\n" +
+    "👤 Occasion: " + occasion +
+    "\n" +
+    "💰 Budget: " + budget +
+    "\n" +
+    "🎁 Hamper Type: " + type +
+    "\n" +
+    "📝 Special Request: " +
+    (message || "None") +
+    "\n\n" +
+    "✨ ANNU PREMIUM HAMPERS";
+
+
+  // ===============================
+  // WHATSAPP LINK
+  // ===============================
+
+  const whatsappURL =
+    "https://wa.me/" +
+    whatsappNumber +
+    "?text=" +
+    encodeURIComponent(whatsappMessage);
+
+
+  // ===============================
+  // OPEN WHATSAPP
+  // ===============================
+
+  window.open(
+    whatsappURL,
+    "_blank"
+  );
+
+}
