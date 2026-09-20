@@ -986,3 +986,52 @@ document.addEventListener(
 
   }
 );
+// ===============================
+// CUSTOM HAMPER
+// ===============================
+
+function submitCustomHamper() {
+
+  const occasion =
+    document.getElementById("customOccasion").value;
+
+  const budget =
+    document.getElementById("customBudget").value;
+
+  const type =
+    document.getElementById("customType").value;
+
+  const message =
+    document.getElementById("customMessage").value.trim();
+
+
+  if (!occasion) {
+    showToast("Please choose an occasion");
+    return;
+  }
+
+
+  if (!budget) {
+    showToast("Please choose your budget");
+    return;
+  }
+
+
+  if (!type) {
+    showToast("Please choose hamper type");
+    return;
+  }
+
+
+  const request =
+    "Custom Hamper Request\n\n" +
+    "Occasion: " + occasion + "\n" +
+    "Budget: " + budget + "\n" +
+    "Hamper Type: " + type + "\n" +
+    "Special Request: " +
+    (message || "None");
+
+
+  alert(request);
+
+    }
