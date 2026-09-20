@@ -103,7 +103,12 @@
       </a>
 
     </div>
-
+<div class="custom-hamper-button">
+  <a href="#customHamper" class="btn secondary">
+    Customize Your Hamper 🎁
+  </a>
+</div>
+    
     <div class="trust">
 
       <span>✓ Premium curation</span>
@@ -331,7 +336,93 @@
 <!-- ===============================
      SHOP
 ================================ -->
+<section id="customHamper" class="section custom-hamper">
 
+  <div class="section-title">
+    <div>
+      <small>CREATE YOUR OWN</small>
+      <h2>Customize Your Hamper</h2>
+    </div>
+  </div>
+
+  <div class="custom-hamper-box">
+
+    <div class="custom-hamper-text">
+      <h3>Make a hamper your way 🎁</h3>
+
+      <p>
+        Choose your occasion, budget and the type of gifts
+        you want in your hamper.
+      </p>
+    </div>
+
+    <div class="custom-form">
+
+      <label>
+        Occasion
+
+        <select id="customOccasion">
+          <option value="">Choose occasion</option>
+          <option>Birthday</option>
+          <option>Couple</option>
+          <option>Anniversary</option>
+          <option>Premium</option>
+        </select>
+      </label>
+
+
+      <label>
+        Your Budget
+
+        <select id="customBudget">
+          <option value="">Choose budget</option>
+          <option>Under ₹1000</option>
+          <option>₹1000 - ₹1500</option>
+          <option>₹1500 - ₹2000</option>
+          <option>₹2000+</option>
+        </select>
+      </label>
+
+
+      <label>
+        Hamper Type
+
+        <select id="customType">
+          <option value="">Choose type</option>
+          <option>Chocolate Hamper</option>
+          <option>Beauty Hamper</option>
+          <option>Couple Hamper</option>
+          <option>Birthday Hamper</option>
+          <option>Luxury Hamper</option>
+        </select>
+      </label>
+
+
+      <label>
+        Special Request
+
+        <textarea
+          id="customMessage"
+          rows="4"
+          placeholder="Example: Add chocolates, teddy, perfume etc."
+        ></textarea>
+      </label>
+
+
+      <button
+        type="button"
+        class="btn primary full"
+        onclick="submitCustomHamper()"
+      >
+        Request Custom Hamper →
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+  
 <section
   id="shop"
   class="section shop"
