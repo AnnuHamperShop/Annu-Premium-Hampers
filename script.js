@@ -838,7 +838,8 @@ function closeCheckout() {
 }
 
 
-function placeOrder(event) {
+
+    function placeOrder(event) {
 
   event.preventDefault();
 
@@ -935,7 +936,7 @@ function openWhatsAppAfterPayment() {
     "_blank"
   );
 
-      }
+}
 
 
 // ===============================
