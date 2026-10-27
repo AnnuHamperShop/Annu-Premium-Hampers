@@ -978,10 +978,131 @@
   </button>
   </div>
 
+    </form>
 
 </div>
 
+<!-- ===============================
+     SEPARATE PAYMENT PAGE
+================================ -->
 
+<div
+  id="paymentPage"
+  class="overlay hidden"
+  onclick="if(event.target===this)closePaymentPage()"
+>
+
+  <div class="checkout">
+
+    <button
+      class="close"
+      type="button"
+      onclick="closePaymentPage()"
+    >
+      ×
+    </button>
+
+    <div class="checkout-title">
+
+      <small>
+        SECURE ONLINE PAYMENT
+      </small>
+
+      <h2>
+        Complete Your Payment
+      </h2>
+
+      <p>
+        Scan the QR code below to make your online payment.
+      </p>
+
+    </div>
+
+
+    <div class="payment-box">
+
+      <div style="text-align:center;">
+
+        <div style="
+          font-size:16px;
+          font-weight:700;
+          margin-bottom:15px;
+        ">
+          💳 Online Payment
+        </div>
+
+
+        <img
+          src="assets/IMG-20261027-WA0001.jpg"
+          alt="Online Payment QR Code"
+          style="
+            width:280px;
+            max-width:90%;
+            height:auto;
+            display:block;
+            margin:0 auto 18px;
+            border-radius:18px;
+          "
+        >
+
+
+        <h3 style="margin:10px 0;">
+          📱 Scan & Pay
+        </h3>
+
+
+        <p style="
+          font-size:13px;
+          color:#666;
+          line-height:1.6;
+          margin:0 auto 20px;
+          max-width:420px;
+        ">
+          Open your UPI or banking app, scan the QR code,
+          and complete your online payment.
+        </p>
+
+
+        <div style="
+          background:#fff7f9;
+          border:1px solid #ead4da;
+          border-radius:12px;
+          padding:14px;
+          margin-bottom:20px;
+          font-size:13px;
+          color:#555;
+        ">
+          🔐 Please make sure your payment is completed
+          before continuing.
+        </div>
+
+
+        <button
+          type="button"
+          class="btn primary full"
+          onclick="openWhatsAppAfterPayment()"
+        >
+          ✅ I Have Paid — Continue on WhatsApp
+        </button>
+
+
+        <button
+          type="button"
+          class="btn full"
+          style="margin-top:10px;"
+          onclick="closePaymentPage()"
+        >
+          ← Back to Checkout
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  </div>
+  
 <div id="toast" class="toast"></div>
 
 
