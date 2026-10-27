@@ -743,91 +743,125 @@
       <div class="form-grid">
 
         <label>
-          Full Name
-          <input
-            required
-            name="name"
-            autocomplete="name"
-          >
-        </label>
+  Shirt Size
+  <select required name="shirtSize">
+    <option value="">Choose Shirt Size</option>
+    <option>XS</option>
+    <option>S</option>
+    <option>M</option>
+    <option>L</option>
+    <option>XL</option>
+    <option>XXL</option>
+    <option>XXXL</option>
+  </select>
+</label>
 
+<label>
+  T-Shirt Size
+  <select required name="tshirtSize">
+    <option value="">Choose T-Shirt Size</option>
+    <option>XS</option>
+    <option>S</option>
+    <option>M</option>
+    <option>L</option>
+    <option>XL</option>
+    <option>XXL</option>
+    <option>XXXL</option>
+  </select>
+</label>
 
-        <label>
-          Mobile Number
-          <input
-            required
-            name="mobile"
-            type="tel"
-            inputmode="tel"
-          >
-        </label>
+<label>
+  Jeans Size
+  <select required name="jeansSize">
+    <option value="">Choose Jeans Size</option>
+    <option>28</option>
+    <option>30</option>
+    <option>32</option>
+    <option>34</option>
+    <option>36</option>
+    <option>38</option>
+    <option>40</option>
+    <option>42</option>
+  </select>
+</label>
 
+<label>
+  Shoes Size
+  <select required name="shoesSize">
+    <option value="">Choose Shoes Size</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+    <option>9</option>
+    <option>10</option>
+    <option>11</option>
+    <option>12</option>
+  </select>
+</label>
 
-        <label class="wide">
-          Full Address
-          <textarea
-            required
-            name="address"
-            rows="2"
-          ></textarea>
-        </label>
+<label class="wide">
+  📸 Photo 1
+  <input type="file" name="photo1" accept="image/*" required>
+</label>
 
+<label class="wide">
+  📸 Photo 2
+  <input type="file" name="photo2" accept="image/*" required>
+</label>
 
-        <label>
-          District
-          <input
-            required
-            name="district"
-          >
-        </label>
+<label class="wide">
+  📸 Photo 3
+  <input type="file" name="photo3" accept="image/*" required>
+</label>
 
+<label class="wide">
+  📸 Photo 4
+  <input type="file" name="photo4" accept="image/*" required>
+</label>
 
-        <label>
-          State
-          <input
-            required
-            name="state"
-          >
-        </label>
+<label class="wide">
+  📸 Photo 5
+  <input type="file" name="photo5" accept="image/*" required>
+</label>
 
+<label>
+  Full Name
+  <input required name="name" autocomplete="name">
+</label>
 
-        <label>
-          PIN Code
-          <input
-            required
-            name="pin"
-            inputmode="numeric"
-            pattern="[0-9]{6}"
-          >
-        </label>
+<label>
+  Mobile Number
+  <input required name="mobile" type="tel" inputmode="tel">
+</label>
 
+<label class="wide">
+  Full Address
+  <textarea required name="address" rows="2"></textarea>
+</label>
 
-        <label class="wide">
+<label>
+  District
+  <input required name="district">
+</label>
 
-          Payment Method
+<label>
+  State
+  <input required name="state">
+</label>
 
-          <select
-            required
-            name="payment"
-          >
+<label>
+  PIN Code
+  <input required name="pin" inputmode="numeric" pattern="[0-9]{6}">
+</label>
 
-            <option value="">
-              Choose payment
-            </option>
-
-            <option>
-              UPI / Online Payment
-            </option>
-
-            <option>
-              Cash on Delivery
-            </option>
-
-          </select>
-
-        </label>
-
-      </div>
+<label class="wide">
+  Payment Method
+  <select required name="payment">
+    <option value="">Choose payment</option>
+    <option>UPI / Online Payment</option>
+    <option>Cash on Delivery</option>
+  </select>
+    </label>
 
 
       <button
@@ -839,7 +873,7 @@
 
 
       <p class="safe">
-        🔒 Demo checkout. Connect your payment
+        🔒 checkout. Connect your payment
         gateway/backend before accepting real payments.
       </p>
 
