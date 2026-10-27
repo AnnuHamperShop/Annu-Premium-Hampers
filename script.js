@@ -842,38 +842,100 @@ function placeOrder(event) {
 
   event.preventDefault();
 
+  const form = event.target;
 
-  const form =
-    event.target;
-
-
-  const data =
-    new FormData(form);
-
-
-  const name =
-    data.get("name");
-
-
-  alert(
-    "Thank you " +
-    name +
-    "! Your order has been placed successfully."
-  );
-
-
-  cart = [];
-
-
-  saveCart();
-
-
-  form.reset();
-
+  window.currentCheckoutForm = form;
 
   closeCheckout();
 
+  const paymentPage =
+    document.getElementById("paymentPage");
+
+  if (paymentPage) {
+    paymentPage.classList.remove("hidden");
+  }
+
 }
+
+
+// ===============================
+// PAYMENT PAGE
+// ===============================
+
+function closePaymentPage() {
+
+  const paymentPage =
+    document.getElementById("paymentPage");
+
+  if (paymentPage) {
+    paymentPage.classList.add("hidden");
+  }
+
+}
+
+
+// ===============================
+// PAYMENT → WHATSAPP
+// ===============================
+
+function openWhatsAppAfterPayment() {
+
+  const form =
+    window.currentCheckoutForm;
+
+  let whatsappMessage =
+    "Hello, I have completed my online payment for my hamper order.\n\n";
+
+
+  if (form) {
+
+    const data =
+      new FormData(form);
+
+    whatsappMessage +=
+      "👤 Name: " +
+      (data.get("name") || "") +
+      "\n" +
+
+      "📱 Mobile: " +
+      (data.get("mobile") || "") +
+      "\n" +
+
+      "👕 Shirt Size: " +
+      (data.get("shirtSize") || "") +
+      "\n" +
+
+      "👕 T-Shirt Size: " +
+      (data.get("tshirtSize") || "") +
+      "\n" +
+
+      "👖 Jeans Size: " +
+      (data.get("jeansSize") || "") +
+      "\n" +
+
+      "👟 Shoes Size: " +
+      (data.get("shoesSize") || "");
+
+  }
+
+
+  const whatsappNumber =
+    "917740907495";
+
+
+  const whatsappURL =
+    "https://wa.me/" +
+    whatsappNumber +
+    "?text=" +
+    encodeURIComponent(whatsappMessage);
+
+
+  window.open(
+    whatsappURL,
+    "_blank"
+  );
+
+      }
 
 
 // ===============================
