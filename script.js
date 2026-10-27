@@ -839,7 +839,7 @@ function closeCheckout() {
 
 
 
-    function placeOrder(event) {
+  function placeOrder(event) {
 
   event.preventDefault();
 
@@ -847,17 +847,24 @@ function closeCheckout() {
 
   window.currentCheckoutForm = form;
 
-  closeCheckout();
-
   const paymentPage =
     document.getElementById("paymentPage");
 
-  if (paymentPage) {
-    paymentPage.classList.remove("hidden");
+  if (!paymentPage) {
+    alert("Payment page is not available. Please refresh the page and try again.");
+    return;
   }
 
-}
+  paymentPage.classList.remove("hidden");
 
+  const checkoutModal =
+    document.getElementById("checkoutModal");
+
+  if (checkoutModal) {
+    checkoutModal.classList.add("hidden");
+  }
+
+  }
 
 // ===============================
 // PAYMENT PAGE
