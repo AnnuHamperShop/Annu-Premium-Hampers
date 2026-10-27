@@ -739,147 +739,243 @@
 
 
     <form onsubmit="placeOrder(event)">
+<div class="form-grid">
 
-      <div class="form-grid">
+  <!-- =========================
+       PRODUCT SIZE DETAILS
+  ========================== -->
 
-        <label>
-  Shirt Size
-  <select required name="shirtSize">
-    <option value="">Choose Shirt Size</option>
-    <option>XS</option>
-    <option>S</option>
-    <option>M</option>
-    <option>L</option>
-    <option>XL</option>
-    <option>XXL</option>
-    <option>XXXL</option>
-  </select>
-</label>
+  <div class="wide checkout-heading">
+    <strong>📏 Product Size Details</strong>
+    <small>
+      Please select the required sizes for your personalized hamper.
+    </small>
+  </div>
 
-<label>
-  T-Shirt Size
-  <select required name="tshirtSize">
-    <option value="">Choose T-Shirt Size</option>
-    <option>XS</option>
-    <option>S</option>
-    <option>M</option>
-    <option>L</option>
-    <option>XL</option>
-    <option>XXL</option>
-    <option>XXXL</option>
-  </select>
-</label>
+  <label>
+    👕 Shirt Size
+    <select required name="shirtSize">
+      <option value="">Select Shirt Size</option>
+      <option value="XS">XS</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+      <option value="XXL">XXL</option>
+      <option value="XXXL">XXXL</option>
+    </select>
+  </label>
 
-<label>
-  Jeans Size
-  <select required name="jeansSize">
-    <option value="">Choose Jeans Size</option>
-    <option>28</option>
-    <option>30</option>
-    <option>32</option>
-    <option>34</option>
-    <option>36</option>
-    <option>38</option>
-    <option>40</option>
-    <option>42</option>
-  </select>
-</label>
+  <label>
+    👕 T-Shirt Size
+    <select required name="tshirtSize">
+      <option value="">Select T-Shirt Size</option>
+      <option value="XS">XS</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+      <option value="XXL">XXL</option>
+      <option value="XXXL">XXXL</option>
+    </select>
+  </label>
 
-<label>
-  Shoes Size
-  <select required name="shoesSize">
-    <option value="">Choose Shoes Size</option>
-    <option>6</option>
-    <option>7</option>
-    <option>8</option>
-    <option>9</option>
-    <option>10</option>
-    <option>11</option>
-    <option>12</option>
-  </select>
-</label>
+  <label>
+    👖 Jeans Size
+    <select required name="jeansSize">
+      <option value="">Select Jeans Size</option>
+      <option value="28">28</option>
+      <option value="30">30</option>
+      <option value="32">32</option>
+      <option value="34">34</option>
+      <option value="36">36</option>
+      <option value="38">38</option>
+      <option value="40">40</option>
+      <option value="42">42</option>
+    </select>
+  </label>
 
-<label class="wide">
-  📸 Photo 1
-  <input type="file" name="photo1" accept="image/*" required>
-</label>
-
-<label class="wide">
-  📸 Photo 2
-  <input type="file" name="photo2" accept="image/*" required>
-</label>
-
-<label class="wide">
-  📸 Photo 3
-  <input type="file" name="photo3" accept="image/*" required>
-</label>
-
-<label class="wide">
-  📸 Photo 4
-  <input type="file" name="photo4" accept="image/*" required>
-</label>
-
-<label class="wide">
-  📸 Photo 5
-  <input type="file" name="photo5" accept="image/*" required>
-</label>
-
-<label>
-  Full Name
-  <input required name="name" autocomplete="name">
-</label>
-
-<label>
-  Mobile Number
-  <input required name="mobile" type="tel" inputmode="tel">
-</label>
-
-<label class="wide">
-  Full Address
-  <textarea required name="address" rows="2"></textarea>
-</label>
-
-<label>
-  District
-  <input required name="district">
-</label>
-
-<label>
-  State
-  <input required name="state">
-</label>
-
-<label>
-  PIN Code
-  <input required name="pin" inputmode="numeric" pattern="[0-9]{6}">
-</label>
-
-<label class="wide">
-  Payment Method
-  <select required name="payment">
-    <option value="">Choose payment</option>
-    <option>UPI / Online Payment</option>
-    <option>Cash on Delivery</option>
-  </select>
-    </label>
+  <label>
+    👟 Shoes Size
+    <select required name="shoesSize">
+      <option value="">Select Shoes Size</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+  </label>
 
 
-      <button
-        class="btn primary full"
-        type="submit"
-      >
-        Place Order
-      </button>
+  <!-- =========================
+       PERSONALIZED PHOTO FRAME
+  ========================== -->
+
+  <div class="wide checkout-heading">
+    <strong>🖼️ Personalized Photo Frame</strong>
+    <small>
+      Upload 5 clear photos. These photos will be used to create your
+      personalized photo frame.
+    </small>
+  </div>
+
+  <label>
+    📸 Photo 1
+    <small class="upload-note">
+      For your personalized photo frame
+    </small>
+    <input
+      required
+      type="file"
+      name="photo1"
+      accept="image/*"
+    >
+  </label>
+
+  <label>
+    📸 Photo 2
+    <small class="upload-note">
+      For your personalized photo frame
+    </small>
+    <input
+      required
+      type="file"
+      name="photo2"
+      accept="image/*"
+    >
+  </label>
+
+  <label>
+    📸 Photo 3
+    <small class="upload-note">
+      For your personalized photo frame
+    </small>
+    <input
+      required
+      type="file"
+      name="photo3"
+      accept="image/*"
+    >
+  </label>
+
+  <label>
+    📸 Photo 4
+    <small class="upload-note">
+      For your personalized photo frame
+    </small>
+    <input
+      required
+      type="file"
+      name="photo4"
+      accept="image/*"
+    >
+  </label>
+
+  <label class="wide">
+    📸 Photo 5
+    <small class="upload-note">
+      For your personalized photo frame
+    </small>
+    <input
+      required
+      type="file"
+      name="photo5"
+      accept="image/*"
+    >
+  </label>
 
 
-      <p class="safe">
-        🔒 checkout. Connect your payment
-        gateway/backend before accepting real payments.
-      </p>
+  <!-- =========================
+       CUSTOMER DETAILS
+  ========================== -->
 
-    </form>
+  <div class="wide checkout-heading">
+    <strong>👤 Customer Details</strong>
+    <small>
+      Please enter your correct delivery information.
+    </small>
+  </div>
+
+  <label>
+    Full Name
+    <input
+      required
+      type="text"
+      name="name"
+      placeholder="Enter your full name"
+    >
+  </label>
+
+  <label>
+    Mobile Number
+    <input
+      required
+      type="tel"
+      name="mobile"
+      placeholder="Enter your mobile number"
+      pattern="[0-9]{10}"
+    >
+  </label>
+
+  <label class="wide">
+    Full Address
+    <textarea
+      required
+      name="address"
+      rows="3"
+      placeholder="House / Flat No., Street, Area"
+    ></textarea>
+  </label>
+
+  <label>
+    District
+    <input
+      required
+      type="text"
+      name="district"
+      placeholder="Enter district"
+    >
+  </label>
+
+  <label>
+    State
+    <input
+      required
+      type="text"
+      name="state"
+      placeholder="Enter state"
+    >
+  </label>
+
+  <label>
+    PIN Code
+    <input
+      required
+      type="text"
+      name="pin"
+      placeholder="6-digit PIN code"
+      pattern="[0-9]{6}"
+    >
+  </label>
+
+
+  <!-- =========================
+       PAYMENT METHOD
+  ========================== -->
+
+  <label class="wide">
+    Payment Method
+    <select required name="payment">
+      <option value="">Select Payment Method</option>
+      <option value="Online Payment">Online Payment</option>
+    </select>
+  </label>
 
   </div>
+
 
 </div>
 
