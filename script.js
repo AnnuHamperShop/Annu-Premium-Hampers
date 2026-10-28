@@ -892,7 +892,7 @@ function openWhatsAppAfterPayment() {
     window.currentCheckoutForm;
 
   let whatsappMessage =
-    "Hello, I have completed my online payment for my hamper order.\n\n";
+    "🎁 ANNU PREMIUM HAMPERS - NEW ORDER\n\n";
 
 
   if (form) {
@@ -901,28 +901,48 @@ function openWhatsAppAfterPayment() {
       new FormData(form);
 
     whatsappMessage +=
-      "👤 Name: " +
+      "👤 Full Name: " +
       (data.get("name") || "") +
-      "\n" +
+      "\n\n" +
 
-      "📱 Mobile: " +
+      "📱 Mobile Number: " +
       (data.get("mobile") || "") +
-      "\n" +
+      "\n\n" +
+
+      "🏠 Full Address: " +
+      (data.get("address") || "") +
+      "\n\n" +
+
+      "🏙️ District: " +
+      (data.get("district") || "") +
+      "\n\n" +
+
+      "📍 State: " +
+      (data.get("state") || "") +
+      "\n\n" +
+
+      "📮 PIN Code: " +
+      (data.get("pin") || "") +
+      "\n\n" +
 
       "👕 Shirt Size: " +
       (data.get("shirtSize") || "") +
-      "\n" +
+      "\n\n" +
 
       "👕 T-Shirt Size: " +
       (data.get("tshirtSize") || "") +
-      "\n" +
+      "\n\n" +
 
       "👖 Jeans Size: " +
       (data.get("jeansSize") || "") +
-      "\n" +
+      "\n\n" +
 
       "👟 Shoes Size: " +
-      (data.get("shoesSize") || "");
+      (data.get("shoesSize") || "") +
+      "\n\n" +
+
+      "💳 Payment Method: " +
+      (data.get("payment") || "");
 
   }
 
@@ -943,8 +963,7 @@ function openWhatsAppAfterPayment() {
     "_blank"
   );
 
-}
-
+      }
 
 // ===============================
 // MOBILE MENU
