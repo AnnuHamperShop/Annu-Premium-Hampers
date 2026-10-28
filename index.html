@@ -1110,5 +1110,78 @@
 
 <script src="script.js?v=2"></script>
 
+<script>
+
+function openWhatsAppAfterPayment() {
+
+  const form = window.currentCheckoutForm;
+
+  if (!form) {
+    alert("Order details are not available. Please go back and try again.");
+    return;
+  }
+
+  const data = new FormData(form);
+
+  const whatsappMessage =
+    "🎁 ANNU PREMIUM HAMPERS - NEW ORDER\n\n" +
+
+    "👤 Full Name: " +
+    (data.get("name") || "") +
+    "\n\n" +
+
+    "📱 Mobile Number: " +
+    (data.get("mobile") || "") +
+    "\n\n" +
+
+    "🏠 Full Address: " +
+    (data.get("address") || "") +
+    "\n\n" +
+
+    "🏙️ District: " +
+    (data.get("district") || "") +
+    "\n\n" +
+
+    "📍 State: " +
+    (data.get("state") || "") +
+    "\n\n" +
+
+    "📮 PIN Code: " +
+    (data.get("pin") || "") +
+    "\n\n" +
+
+    "👕 Shirt Size: " +
+    (data.get("shirtSize") || "") +
+    "\n\n" +
+
+    "👕 T-Shirt Size: " +
+    (data.get("tshirtSize") || "") +
+    "\n\n" +
+
+    "👖 Jeans Size: " +
+    (data.get("jeansSize") || "") +
+    "\n\n" +
+
+    "👟 Shoes Size: " +
+    (data.get("shoesSize") || "") +
+    "\n\n" +
+
+    "💳 Payment Method: " +
+    (data.get("payment") || "");
+
+  const whatsappNumber = "917740907495";
+
+  const whatsappURL =
+    "https://wa.me/" +
+    whatsappNumber +
+    "?text=" +
+    encodeURIComponent(whatsappMessage);
+
+  window.location.href = whatsappURL;
+
+}
+
+</script>
+
 </body>
-  </html>
+</html>
