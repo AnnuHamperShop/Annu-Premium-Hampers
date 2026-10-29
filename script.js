@@ -112,13 +112,13 @@ const products = [
   oldPrice: 1799,
   image: "https://raw.githubusercontent.com/AnnuHamperShop/Annu-Premium-Hampers/main/assets/assets/couple/file_000000000ab8821183dec52ecdee72aa.png"
 },
-  {
+{
   id: 12,
   name: "Romantic Couple Hamper",
   category: "Couple",
   price: 1599,
   oldPrice: 1899,
-  image: "assets/assets/couple/IMG_20260728_120311_747.jpg"
+  image: "https://raw.githubusercontent.com/AnnuHamperShop/Annu-Premium-Hampers/main/assets/assets/couple/IMG_20260728_120311_747.jpg"
 },
 
 {
@@ -127,7 +127,7 @@ const products = [
   category: "Couple",
   price: 1799,
   oldPrice: 2199,
-  image: "assets/assets/couple/IMG_20260728_120324_459.jpg"
+  image: "https://raw.githubusercontent.com/AnnuHamperShop/Annu-Premium-Hampers/main/assets/assets/couple/IMG_20260728_120324_459.jpg"
 },
 
 {
@@ -136,7 +136,7 @@ const products = [
   category: "Couple",
   price: 1899,
   oldPrice: 2299,
-  image: "assets/assets/couple/IMG_20260728_120513_160.jpg"
+  image: "https://raw.githubusercontent.com/AnnuHamperShop/Annu-Premium-Hampers/main/assets/assets/couple/IMG_20260728_120513_160.jpg"
 }
 
 ];
