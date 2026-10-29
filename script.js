@@ -118,7 +118,7 @@ const products = [
   category: "Couple",
   price: 1599,
   oldPrice: 1899,
-  image: "https://raw.githubusercontent.com/AnnuHamperShop/Annu-Premium-Hampers/main/assets/assets/couple/IMG_20260728_120311_747.jpg"
+  image: "https://cdn.jsdelivr.net/gh/AnnuHamperShop/Annu-Premium-Hampers@main/assets/assets/couple/IMG_20260728_120311_747.jpg"
 },
 
 {
