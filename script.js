@@ -926,19 +926,19 @@ function openWhatsAppAfterPayment() {
       "\n\n" +
 
       "👕 Shirt Size: " +
-      (data.get("shirtSize") || "") +
+      (data.get("shirtSize") || "None") +
       "\n\n" +
 
       "👕 T-Shirt Size: " +
-      (data.get("tshirtSize") || "") +
+      (data.get("tshirtSize") || "None") +
       "\n\n" +
 
       "👖 Jeans Size: " +
-      (data.get("jeansSize") || "") +
+      (data.get("jeansSize") || "None") +
       "\n\n" +
 
       "👟 Shoes Size: " +
-      (data.get("shoesSize") || "") +
+      (data.get("shoesSize") || "None") +
       "\n\n" +
 
       "💳 Payment Method: " +
